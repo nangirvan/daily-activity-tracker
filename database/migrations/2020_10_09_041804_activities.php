@@ -15,9 +15,7 @@ class Activities extends Migration
     {
         Schema::create('activities', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('category_id')->constrained('categories')->onDelete('cascade');
             $table->string('name', 50)->unique();
-            $table->json('target');
             $table->timestampTz('created_at');        
             $table->timestampTz('updated_at');        
             $table->timestampTz('deleted_at')->nullable();  

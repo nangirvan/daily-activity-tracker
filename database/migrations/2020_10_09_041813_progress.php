@@ -18,9 +18,10 @@ class Progress extends Migration
             $table->foreignId('activity_id')->constrained('activities')->onDelete('cascade');
             $table->timestampTz('start_at');        
             $table->timestampTz('end_at')->nullable();  
-            $table->time('duration')->nullable();
-            $table->json('note')->nullable();   
+            $table->integer('target_minutes');        
+            $table->integer('progress_minutes')->nullable();   
             $table->timestampTz('deleted_at')->nullable();
+            $table->date('date_added');
         });
     }
 
