@@ -1,10 +1,8 @@
 ## Daily Activity Tracker
 
 Features :
-- Dashboard 
-  - Show total time spent today
-  - Show list of activities grouped by category
-  - Show today progress of each activity
-- CRUD category
-- CRUD activity
-- Show details of each category
+- Show target time today (used time and remaining time)
+- Add activity name
+- Add progress of each activity
+- Show today progress of each activity
+- Update progress of each activity
