@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
+
+Route::post('/add-activity', 'ActivityController@addActivity');
+Route::post('/add-progress', 'ProgressController@addProgress');
+
+Route::get('/update-progress', 'ProgressController@updateProgress');
